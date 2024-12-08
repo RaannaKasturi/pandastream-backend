@@ -1,7 +1,5 @@
 version: '3.8'
 
-name: "mw_backend"
-
 services:
   # required services
   postgres:
@@ -12,6 +10,7 @@ services:
       POSTGRES_PASSWORD: postgres
     volumes:
      - 'postgres_data:/var/lib/postgresql/data'
+
   redis:
     image: redis
 
